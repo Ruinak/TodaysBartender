@@ -1,8 +1,10 @@
-package com.cos.todaysbartender;
+package com.cos.todaysbartender.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.cos.todaysbartender.R;
 
 public class MainActivity extends AppCompatActivity {
 
