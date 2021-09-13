@@ -1,0 +1,17 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/bg_gradient1"
+        android:duration="1500" />
+
+    <item
+        android:drawable="@drawable/bg_gradient2"
+        android:duration="1500" />
+
+    <item
+        android:drawable="@drawable/bg_gradient3"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/bg_gradient4"
+        android:duration="1500" />
+</animation-list>

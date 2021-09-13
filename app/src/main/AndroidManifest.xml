@@ -11,8 +11,8 @@
         android:theme="@style/Theme.TodaysBartender">
         <activity android:name=".activity.user.PasswordResetActivity"></activity>
         <activity android:name=".activity.user.LoginActivity" />
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.user.JoinActivity">
+        <activity android:name=".activity.user.JoinActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

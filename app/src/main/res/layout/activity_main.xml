@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
+    android:id="@+id/svMain"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/bg_gradient"
+    android:background="@drawable/bg_gradient_list"
     tools:context=".activity.MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/beach" />
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -25,43 +22,71 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoRecommend"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
+                android:layout_height="200dp"
+                android:layout_weight="30"
                 android:background="@drawable/bg_btn"
-                android:text="테스트 버튼 1"
-                android:layout_margin="1dp" />
+                android:text="오늘의 칵테일"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="3dp" />
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoList"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
+                android:layout_height="200dp"
+                android:layout_weight="30"
                 android:background="@drawable/bg_btn"
-                android:text="테스트 버튼 2"
-                android:layout_margin="1dp" />
+                android:text="칵테일 목록"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="3dp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoPopularity"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="30"
+                android:background="@drawable/bg_btn"
+                android:text="인기 칵테일"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="3dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoBoard"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="30"
+                android:background="@drawable/bg_btn"
+                android:text="게시판"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="3dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGoDetail"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
+                android:layout_height="100dp"
+                android:layout_weight="30"
                 android:background="@drawable/bg_btn"
-                android:text="테스트 버튼 3"
-                android:layout_margin="1dp" />
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="50"
-                android:background="@drawable/bg_btn"
-                android:text="테스트 버튼 4"
-                android:layout_margin="1dp" />
+                android:text="내 정보 관리"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="80dp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
 
 </ScrollView>
